@@ -31,7 +31,7 @@ Install the following extensions on VSCode.
 ## Install Dependencies
 
 Open the command line and run this command.
-`pip install numpy pandas sklearn`
+`pip install numpy pandas scikit-learn`
 
 ## Download Project
 
