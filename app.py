@@ -32,3 +32,29 @@ classifier = svm.SVC(kernel='linear')
 
 # -- training the support vector machine classifier
 classifier.fit(X_train, y_train)
+
+
+# -- web application (code)
+
+# -- diabetes features input
+st.title("Diabetes Prediction Application")
+
+with st.form("diabetes_pred_form"):
+    pregnancies_input = st.text_input("Pregnancies")
+
+    glucose_input = st.text_input("Glucose")
+
+    blood_pressure_input = st.text_input("Blood Pressure")
+
+    skin_thickness_input = st.text_input("Skin Thickness")
+
+    insulin_input = st.text_input("Insulin")
+
+    bmi_input = st.number_input("BMI")
+
+    dpf_input = st.number_input("Diabetes Pedigree Function")
+
+    age_input = st.text_input("Age")
+
+    # -- prediction, form submit button 
+    submitted = st.form_submit_button("Predict", type="primary", help="click to predict diabetes status")
