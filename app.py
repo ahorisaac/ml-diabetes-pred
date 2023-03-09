@@ -33,13 +33,39 @@ classifier = svm.SVC(kernel='linear')
 # -- training the support vector machine classifier
 classifier.fit(X_train, y_train)
 
+# -- making a predictive system 
+def predict_diab(preg, gluc, bp, sktn, insu, bmi, dpfn, age):
+    input_data = (int(preg), int(gluc), int(bp), int(sktn), int(insu), float(bmi), (dpfn), int(age),)
+
+    # -- change the input data to numpy array 
+    input_data_as_nparr = np.asarray(input_data)
+
+    # -- reshape the array as we are predicting for one instance 
+    input_data_reshaped = input_data_as_nparr.reshape(1, -1)
+
+    # -- standardize the input data 
+    standardized_input_data = scaler.transform(input_data_reshaped)
+
+    prediction = classifier.predict(standardized_input_data)
+
+    if (prediction[0] == 0):
+        st.success("The patient is NON-DIABETIC :white_check_mark:")
+        return True
+    else:
+        st.error("The patient is DIABETIC :heavy_exclamation_mark:")    
+        return False
 
 # -- web application (code)
 
 # -- diabetes features input
+with st.columns(3)[1]:
+    st.image("./images/icon.png", width=3**4)
+
 st.title("Diabetes Prediction Application")
 
-with st.form("diabetes_pred_form"):
+st.subheader("Diabetes Prediction Form")
+
+with st.form("diabetes_pred_form", clear_on_submit=True):
     pregnancies_input = st.text_input("Pregnancies")
 
     glucose_input = st.text_input("Glucose")
@@ -58,3 +84,7 @@ with st.form("diabetes_pred_form"):
 
     # -- prediction, form submit button 
     submitted = st.form_submit_button("Predict", type="primary", help="click to predict diabetes status")
+    
+    if submitted:
+        predict_diab(pregnancies_input, glucose_input, blood_pressure_input, skin_thickness_input, insulin_input, bmi_input, dpf_input, age_input)
+
