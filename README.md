@@ -1,25 +1,44 @@
+<h1 align="center">
+  <br>
+  <a href="#"><img src="./images/icon-ml.png" alt="how-to-save-man" width="200"></a>
+  <br>
+  <span style="color: powderblue;">Machine Learning</span> 🔀 How to Save Man
+  <br>
+</h1>
+
+
+<h2 align="center"> Diabetes Prediction using Machine Learning in 
+    <br />
+    <img src="./images/python-logo.png" alt="python" width="40" height="40" />
+</h2>
+
+<p align="center">
+  <a href="#credits">Credits</a> •
+  <a href="#support">Support</a> •
+  <a href="#license">License</a>
+</p>
+
 # Setup
 
 Follow vividly this instructions to set up  the project.
 
-1. [VSCode Installation](#vscode-installation)
-1. [Python Installation](#python-installation)
-1. [Extensions Installation](#extensions-installation)
-1. [Install Dependencies](#install-dependencies)
-1. [Download Project](#download-project)
-1. [Run Web App](#run-web-app)
+<br />
 
-## VSCode Installation
+### VSCode Installation
 
 - [Download VSCode](https://code.visualstudio.com/download)
 - During the installation, add VSCode to path.
 
-## Python Installation
+<br />
+
+### Python Installation
 
 - [Download Python](https://www.python.org/downloads/)
 - During the installation, add Python to path.
 
-## Extensions Installation
+<br />
+
+### Extensions Installation
 
 Install the following extensions on VSCode.
 
@@ -29,21 +48,38 @@ Install the following extensions on VSCode.
 - Jupyter Notebook Renderers
 - GitLens
 
-## Install Dependencies
+<br />
+
+### Install Dependencies
 
 Open the command line and run this command.
-`pip install numpy pandas scikit-learn`
+`pip install numpy pandas matplotlib scikit-learn seaborn`
 
-## Download Project
+<br />
 
-Follow either ways to get this project to your PC
+### Download Project
 
-1. Download the project and extract it. Right click and open the project in VSCode.
-1. Clone the repository in *C:/dir/project-dir/*. Right click and open the project in VSCode.
-1. Click on *diabetes-pred.ipynb* file, wait for it to load all cells then click on run all.
+Follow one of these ways to get this project to your computer 💻
 
-![Project Image](./images/dbts-1.png)
-![Project Image](./images/dbts-2.png)
+- Download the project and extract it.
+    - Right click and open the project in VSCode
+    - Click on the notebook file and run all cells.
+- Clone the project using the comand-line, change the _present working directory_ to the cloned project’s directory
+    - Open  the project in  VSCode using the command → `code .`
+    - Click on the notebook file and run all cells.
+
+
+<br />
+
+## Project Gallery
+
+<img src="./images/dbts-1.png" alt="project img" style="border-radius: 4px; box-shadow: 0 0 2px 4px rgba(255, 255, 255, 0.1); border: 1px solid rgba(0, 0, 0, 0.5);" />
+
+<br />
+
+<img src="./images/dbts-2.png" alt="project img" style="border-radius: 4px; box-shadow: 0 0 2px 4px rgba(255, 255, 255, 0.1); border: 1px solid rgba(0, 0, 0, 0.5);" />
+
+<br />
 
 ## Run Web App
 
@@ -55,4 +91,50 @@ Open your project as the present working directory in the terminal and run `stre
 ![Project Image](./images/app-3.png)
 ![Project Image](./images/app-4.png)
 
-Enjoy!
+## Credits
+
+This software uses the following open source packages:
+
+<p>
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
+
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+<img src="images/seaborn.png" width="90" height="30" alt="img" style="border: 1px solid white; background-color: white;"  />
+
+</p>
+
+<br />
+
+## Support
+
+<a href="https://www.buymeacoffee.com/ahorisaac" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
+<br />
+
+
+
+## You may also like...
+
+- [ML Web App](https://github.com/AhorIsaac/ml-diabetes-pred) - A Machine Learning Web App for predicting Diabetes.
+- [ML Web App](https://github.com/AhorIsaac/ml-house-price-pred) - A Machine Learning Web App for House Price Predictions. 
+
+
+<br />
+
+## License
+
+MIT
+
+---
+
+> <img src="./images/hrc.png" alt="icon" width="30" height="30" style="border-radius: 15px; border: 1px solid white; margin: 4px;" /> Visit [Portfolio](https://his-royal-codeness.netlify.app) &nbsp;&middot;&nbsp;
+> <img src="./images/github.png" alt="icon" width="30" height="30" style="border-radius: 15px; border: 1px solid white; margin: 4px;" /> GitHub [@AhorIsaac](https://github.com/AhorIsaac) &nbsp;&middot;&nbsp;
+> <img src="./images/twitter.png" alt="icon" width="30" height="30" style="border-radius: 15px; border: 1px solid white; margin: 4px;" /> Twitter [@AhorIsaac_](https://twitter.com/AhorIsaac_)
